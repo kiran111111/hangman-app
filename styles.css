@@ -1,0 +1,146 @@
+
+
+:root{
+ --main-background-color : #1A1A1A;
+ --main-font-color : white;
+ --light-white: #eee;
+ --light-black: #111;
+ --light-yellow: rgb(243, 168, 47);
+ --container-width: 768px;
+ --font-body-stack : Arial, Helvetica, sans-serif;
+ --font-heading-stack: Impact, Charcoal, sans-serif;
+}
+
+*{
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+.container{
+ width: 100%;
+ height: 100vh;;
+ background-image: url('app2.svg');
+}
+
+.hangman{
+ position: absolute;
+ top: 3rem;
+ border-radius: 5px;
+ margin-left: 20%;
+ width: 60%;
+ height: 90vh;
+ background-color: rgb(37, 35, 35);
+ text-align: center;
+}
+
+.hangman__title{
+   color:  var(--light-yellow);
+   font-family : var(--font-heading-stack);
+   position: relative;
+   top: 1rem;
+   margin : 2rem 0rem 4rem;
+   font-size : 2.5rem;
+}
+
+.button{
+  position: relative;
+  display: block;
+  margin: 1.2rem auto;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--light-yellow);
+  border: 1px solid white;
+  font-family: var(--font-body-stack);
+  background-color: var(--main-background-color);
+}
+
+.button:hover{
+ padding: 0.6rem;
+ background-color: var(--light-black);
+}
+
+/* End Screen */
+.hangman__title h2{
+ font-size: 1rem;
+ font-weight: lighter;
+ font-family: var(--font-body-stack);
+}
+
+.hangman__instructions {
+  color:var(--light-white);
+  font-family: var(--font-body-stack);
+  
+}
+
+.hangman__instructions li{
+ text-align: left;
+ list-style-type: square;
+ padding: 3px;
+ padding-left: 1.5rem;
+}
+
+/* logic screen */
+
+.hangman__stats{
+ color:var(--light-white);
+ font-family: var(--font-body-stack);
+ position: absolute;
+ top:3px;
+ left :5px;
+}
+
+h1{
+ margin:0;
+}
+
+.hangman__board{
+ margin:0;
+ padding:0;
+   border : 1px solid white;
+}
+
+.hangman__word{
+ color: white;
+}
+
+.hangman__letters {
+ list-style-type: none;
+ color: var(--main-font-color);
+max-width: 580px;
+ margin: 0 auto;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+
+
+.hangman__letter {
+ display: inline-block;
+ width: 2rem;
+ text-transform: uppercase;
+ font-family: var(--font-body-stack);
+ padding: 0.2rem 0.3rem;
+ border-radius: 4px;
+ margin: 0.2rem;
+ background: var(--light-white);
+ color: var(--light-black);
+ border: 3px solid var(--main-bg-color);
+ font-size: 1.2rem;
+}
+
+.hangman__letter:hover{
+ cursor: pointer;
+}
+
+.hangman__letter--active{
+background-color: grey;
+color: white;
+}
+
+.letters{
+ text-align: center;
+ width : 600px;
+ margin: 0 auto}
